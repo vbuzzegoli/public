@@ -4,23 +4,26 @@ Code challenge realized by Victor Buzzegoli.
 
 ## How to run 
 
-- 1. Download this project 
+- Download this project 
 
-- 2. Make sure `Node.js` and `npm` are installed 
+- Make sure `Node.js` and `npm` are installed 
   - Check current versions : `node -v` and `npm -v`
   - If necessary install those using the instructions available here : 
     * https://nodejs.org/en/download/
     * https://www.npmjs.com/get-npm
 
-- 3. In your terminal, navigate to the project folder
+- In your terminal, navigate to the project folder
   * `cd itunes-explorer` 
 
-- 4. Use one of the following options to install the dependencies and start the app :
-  A. Run `./deploy.sh`
-  _OR_
-  B. Run `npm install`, then run `npm start`
+- Use one of the following options to install the dependencies and start the app :
 
-- 5. Access `http://localhost:3000/` in your browser to see the app running
+  * A. Run `./deploy.sh`
+
+  _OR_
+
+  * B. Run `npm install`, then run `npm start`
+
+- Access `http://localhost:3000/` in your browser to see the app running
 
 ## App Info
 
@@ -32,6 +35,7 @@ Be sure to click 'Update' when your work is done.
 2. Create a Search Component for entering an Artist
 
 3. On Search, make an api call to iTunes API to fetch the information about the artist
+
 API URL: https://itunes.apple.com/search?term=${ARTIST_NAME}
 
 4. When the Search button is clicked, make a call to the API and display the list of albums, including the album name and album cover inside #albums-container in a grid. Use any CSS technique you are comfortable with (Note: The API will return a list of albums based on the search result. Use your skills to find out what the iTunes API data structure looks like and extract the relevant data from it).
@@ -64,12 +68,14 @@ Running using Node.js
 #### Enable console debug 
 
 To enable the debug in your browsers console, in `meta.js` :
-	* Set `debug: true` 
+
+* Set `debug: true` 
 
 #### Disable console debug 
 
 To disable the debug in your browsers console, in `meta.js` :
-	* Set `debug: false` 
+
+* Set `debug: false` 
 
 
 ### iTunes API
