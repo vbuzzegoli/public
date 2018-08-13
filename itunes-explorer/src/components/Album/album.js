@@ -18,10 +18,10 @@ class Album extends Component {
 
     render() {
 
-        let cover = this.props.data.artworkUrl100;
-        let name = this.props.data.collectionName;
-        let artist = this.props.data.artistName;
-        let year = ("" + this.props.data.releaseDate).substring(0, 4);
+        const cover = this.props.data.artworkUrl100;
+        const name = this.props.data.collectionName;
+        const artist = this.props.data.artistName;
+        const year = ("" + this.props.data.releaseDate).substring(0, 4);
 
         return ( 
             <div className="col-lg-2 col-md-3 col-sm-4 col-xs-12 album-wrapper">

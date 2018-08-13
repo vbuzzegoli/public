@@ -78,11 +78,11 @@ class Search extends Component {
     //  Formats the input to be used with the REST API 
     //  Used in 'search(input)' below
     formatSearch(input = ""){
-        var output = input;
+        let output = input;
 
-        var regexSpecialChar = /\W/g;
-        var regexMultipleSpace = /\s\s+/g;
-        var regexSpace = / /g;
+        const regexSpecialChar = /\W/g;
+        const regexMultipleSpace = /\s\s+/g;
+        const regexSpace = / /g;
 
         output = (
             (((output.replace(regexSpecialChar, " "))
@@ -102,7 +102,7 @@ class Search extends Component {
     //      search("Daft Punk") will request the albums related to 'Daft Punk'
     search(input = ""){
         this.clear();
-        let formatedInput = this.formatSearch(input);
+        const formatedInput = this.formatSearch(input);
         this.props.fetchAlbums(formatedInput);
         this.props.editLastSearch(input);
     }
