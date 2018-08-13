@@ -1,0 +1,171 @@
+@import '../../sass-global/variables';
+@import '../../sass-global/mixins';
+
+#search {
+	padding: 0px;
+
+	.row {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#title {
+		@include fsPrimary;
+		color: $clSecondaryText;
+		background-color: $clPrimaryBackground;
+		font-weight: 500;
+		font-size: 15px;
+		padding: 50px;
+	}
+
+	#subtitle {
+		color: $clTertiaryText;
+		font-weight: 300;
+		opacity: 0.5;
+	}
+
+	#search-icon {
+		width: $searchIconSize;
+		height: $searchIconSize;
+		-webkit-mask: url(../../assets/logo/search.svg) no-repeat center;
+		mask: url(../../assets/logo/search.svg) no-repeat center;
+		background-color:  $clTertiaryText;
+		margin: auto;
+		display: block;
+		opacity: 0.3;
+
+	}
+
+	#submit-search {
+		width: 100%;
+		height: $searchSectionHeight;
+		margin: auto;
+		display: block;
+		background-color: $clPrimaryBackground;
+		border-width: 0px;
+
+		outline: 0;       
+		@include clearFix;
+	}
+
+	#submit-search-wrapper {
+
+	}
+
+
+	#search-input {
+		height: $searchSectionHeight;
+		width: inherit;
+
+		color: $clSecondaryText;
+		background-color: $clPrimaryBackground;
+		border-width: 0px 0px 0px 0px;
+
+		outline: 0;
+		padding-left: 50px;
+		font-size: 50px;
+
+		
+	}
+
+	@include mobile {
+		#search-input {
+			font-size: 35px;
+		}
+
+		#subtitle {
+			display: none;
+		}
+	}
+
+	@include mQ(530px) {
+		#search-input {
+			font-size: 20px;
+		}
+	}
+
+	@include mQ(370px) {
+		#search-input {
+			font-size: 12px;
+			max-height: 100px;
+
+		}
+
+		#search-input-wrapper {
+			max-height: 100px;
+
+		}
+
+		#submit-search{
+			max-height: 100px;
+
+		}
+
+		
+	}
+
+	#search-input-wrapper {
+		height: $searchSectionHeight;
+		width: 100%;
+	}
+
+	#search-section {
+		min-height: $searchIconSize;
+		color: $clSecondaryText;
+		background-color: $clPrimaryBackground;
+		padding-bottom: 20px; 
+
+	}
+
+	.progress {
+		height: 4px;
+		width: 100%;
+		margin: 0px;
+		background-color: $clPrimaryBackground;
+		border-width: 0px;
+		box-shadow: none;
+		border-radius: 0px;
+	}
+
+	.progress-bar {
+		background-color: $clPrimaryText;
+		border-width: 0px;
+		box-shadow: none;
+		width: 0%;
+		z-index: 1000;
+		//transition: width 1s ease-out;
+	}
+
+	.animate-progress-bar {
+		animation: fillUp 0.8s ease-in;
+	}
+
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  $clTertiaryText;
+	opacity: 0.3;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:  $clTertiaryText;
+	opacity: 0.3;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:  $clTertiaryText;
+	opacity: 0.3;
+}
+
+//custom animation for the progress bar
+
+@keyframes fillUp {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}

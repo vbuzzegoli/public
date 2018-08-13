@@ -1,0 +1,104 @@
+@import '../../sass-global/variables';
+@import '../../sass-global/mixins';
+
+#results {
+	padding: 0px;
+
+	.row {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.main-info{
+		padding: 30px 50px;
+		color: $clResultsText;
+		@include fsPrimary;
+		font-size: 17px;
+		font-weight: 500;
+	}
+
+	#no-results-secondary{
+		@include fsSecondary;
+		font-size: 15px;
+		font-weight: 300;
+		opacity: 0.6;
+	}
+
+	#artist-name{
+		color: $clPrimaryText;
+		padding: 0px 2px;
+	}
+
+	#clear-wrapper{
+		margin-left: 20px;
+		font-size: 15px;
+		font-weight: 300;
+		display: inline;
+	}
+
+	#clear{
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: $clTertiaryBackground;
+		border-width: 0px;
+		outline: 0;
+		opacity: 0.6;
+		box-shadow: none;
+
+	}
+
+	#x{
+		margin-top: -3px;
+		margin-left: -1px;
+		opacity: 0.6;
+	}
+
+	#albums-container{
+		margin: 50px;
+	}
+
+	//CSS transition group 
+
+	.slide-and-fade-enter {
+		opacity: 0;
+		transform: translateY($animationSlideInOffset);
+	}
+
+	.slide-and-fade-enter-active {
+		opacity: 1;
+		transition: opacity 300ms ease-in forwards;
+		animation: slide-in 300ms ease-out forwards;
+	}
+
+	.slide-and-fade-leave {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	.slide-and-fade-leave-active {
+		opacity: 0;
+		transition: opacity 300ms ease-in forwards;
+		animation: slide-out 300ms ease-out;
+	}
+}
+
+@keyframes slide-in {
+	0% {
+		transform: translateY($animationSlideInOffset);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		transform: translateY(0%);
+	}
+
+	100% {
+		transform: translateY($animationSlideOutOffset);
+	}
+}

@@ -1,0 +1,76 @@
+@import '../../sass-global/variables';
+@import '../../sass-global/mixins';
+
+.album-wrapper {
+	color: $clResultsText;
+
+	.album {
+		max-width: $albumSize;
+		max-height: $albumSize;
+		display: block;
+		margin: auto;	
+		margin-bottom: 75px;
+
+	}
+
+	.album-cover-wrapper {
+		width: 100%;
+		max-height: $albumSize;
+		background-color: $dark;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+
+	.album-cover {
+		width: 100%;
+		border-radius: 5px;
+		max-height: $albumSize;
+	}
+
+	.album-name {
+		@include fsPrimary;
+		font-size: 14px;
+		font-weight: 500;
+		padding: 5px 0px 0px 2px;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+		height: 23px;
+		max-width: $albumSize;
+		margin: 0px 5px 0px 0px;
+
+	}
+
+	.album-subinfo {
+		@include fsSecondary;
+		font-size: 12px;
+		font-weight: 300;
+		padding: 5px 4px 0px 2px;
+		height: 23px;
+		max-width: $albumSize;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap; 
+		display: flex;
+		flex-direction: row;
+	}
+
+	.album-artist {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap; 
+		max-height: 23px;
+		margin: 0px 10px 0px 0px;
+		flex-grow: 3;
+
+	}
+
+	.album-year{
+		opacity: 0.3;
+		font-size: 12px;
+		margin: 0px;
+		flex-grow: 1;
+		text-align: right;
+	}
+	
+}
