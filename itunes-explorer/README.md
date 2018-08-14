@@ -17,11 +17,11 @@ Code challenge realized by Victor Buzzegoli.
 
 - Use one of the following options to install the dependencies and start the app :
 
-  * A. Run `./deploy.sh`
+  * __A.__ Run `./deploy.sh`
 
   _OR_
 
-  * B. Run `npm install`, then run `npm start`
+  * __B.__ Run `npm install`, then run `npm start`
 
 - Access `http://localhost:3000/` in your browser to see the app running
 
@@ -67,13 +67,13 @@ Running using Node.js
 
 #### Enable console debug 
 
-To enable the debug in your browsers console, in `meta.js` :
+To enable the debug in your browser's console, in `meta.js` :
 
 * Set `debug: true` 
 
 #### Disable console debug 
 
-To disable the debug in your browsers console, in `meta.js` :
+To disable the debug in your browser's console, in `meta.js` :
 
 * Set `debug: false` 
 
