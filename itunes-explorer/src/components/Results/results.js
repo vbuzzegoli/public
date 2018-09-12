@@ -25,7 +25,7 @@ class Results extends Component {
         lastSearch: ""
     }
 
-    handleClear = (event) => {
+    handleClear = event => {
         this.clearSearch();
     }
 
@@ -34,7 +34,6 @@ class Results extends Component {
         this.props.clearAlbums();
         this.props.editLastSearch("");
         if (meta.debug) { console.log('Results cleared..'); }
-        
     }
 
     render() {
@@ -65,8 +64,9 @@ class Results extends Component {
                         transitionEnterTimeout={300} 
                         transitionLeaveTimeout={300} >
                         { this.props.albums.map(album => {
+                            const albumId = UUID(); //could be saved for re-use if needed
                             return (
-                                <Album data={album} key={UUID()}/>
+                                <Album data={album} key={albumId}/>
                             );
                         })}
                     </ReactCSSTransitionGroup>

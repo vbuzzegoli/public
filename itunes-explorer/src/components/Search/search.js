@@ -26,7 +26,7 @@ class Search extends Component {
         );
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = event => {
 
         this.search(this.refs.query.value);
         if (meta.debug) { console.log('Search input was submited..'); }
@@ -34,7 +34,7 @@ class Search extends Component {
 
     }
 
-    handleChange = (event) => {
+    handleChange = event => {
 
         
         //    Auto search disabled to prevent from spamming iTunes's servers
@@ -50,11 +50,11 @@ class Search extends Component {
         
     }
 
-    handleKeyUp = (event) => {
+    handleKeyUp = event => {
 
         if (meta.debug) { console.log('Search input has changed..'); }
 
-        if (event.keyCode === 13 ) {
+        if (event.keyCode === 13) {
             //Enter
             //trigger
             this.search(this.refs.query.value);
