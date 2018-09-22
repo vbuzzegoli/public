@@ -27,6 +27,12 @@ Code challenge realized by Victor Buzzegoli.
 
 -   Access `http://localhost:3000/` in your browser to see the app running
 
+## How to test
+
+-   Once the previous step has been completed once or more :
+
+-   Run `npm run test`
+
 ## App Info
 
 ### Challenge instructions (As is)
