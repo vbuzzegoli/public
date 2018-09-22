@@ -2,35 +2,37 @@
 
 Code challenge realized by Victor Buzzegoli.
 
-## How to run 
+## How to run
 
-- Download this project 
+-   Download this project
 
-- Make sure `Node.js` and `npm` are installed 
-  - Check current versions : `node -v` and `npm -v`
-  - If necessary install those using the instructions available here : 
-    * https://nodejs.org/en/download/
-    * https://www.npmjs.com/get-npm
+-   Make sure `Node.js` and `npm` are installed
 
-- In your terminal, navigate to the project folder
-  * `cd itunes-explorer` 
+    -   Check current versions : `node -v` and `npm -v`
+    -   If necessary install those using the instructions available here :
+        -   https://nodejs.org/en/download/
+        -   https://www.npmjs.com/get-npm
 
-- Use one of the following options to install the dependencies and start the app :
+-   In your terminal, navigate to the project folder
 
-  * __A.__ Run `./deploy.sh`
+    -   `cd itunes-explorer`
 
-  _OR_
+-   Use one of the following options to install the dependencies and start the app :
 
-  * __B.__ Run `npm install`, then run `npm start`
+    -   **A.** Run `./deploy.sh`
 
-- Access `http://localhost:3000/` in your browser to see the app running
+    _OR_
+
+    -   **B.** Run `npm install`, then run `npm start`
+
+-   Access `http://localhost:3000/` in your browser to see the app running
 
 ## App Info
 
 ### Challenge instructions (As is)
 
-1. Create a github Repo or Click 'Fork' from the top menu and generate your own JSFiddle link. 
-Be sure to click 'Update' when your work is done.
+1. Create a github Repo or Click 'Fork' from the top menu and generate your own JSFiddle link.
+   Be sure to click 'Update' when your work is done.
 
 2. Create a Search Component for entering an Artist
 
@@ -44,39 +46,44 @@ API URL: https://itunes.apple.com/search?term=${ARTIST_NAME}
 
 6. Checkin or Click Update from the top Menu and save the link
 
+### Technologies used
 
-### Technologies used 
+Languages :
 
-Languages : 
-- _Javascript (ES6, JSX)_
-- _CSS 3_
-- _HTML 5_ 
+-   _Javascript (ES6, JSX)_
+-   _CSS 3_
+-   _HTML 5_
 
 Frameworks :
-- _React.js_ (UI - DOM/VirtualDOM Management)
-- _Redux.js_ (State Management)
-- _Axios.js_ (REST)
-- _SASS_ (CSS Preprocessing) 
-- _Bootstrap_ (CSS only - no unsafe DOM manipulation)
-- _jQuery_ (CSS Animations only - no unsafe DOM manipulation)
-- _React CSS Transition Group_ (CSS Animations)
+
+-   _React.js_ (UI - DOM/VirtualDOM Management)
+-   _Redux.js_ (State Management)
+-   _Axios.js_ (REST)
+-   _SASS_ (CSS Preprocessing)
+-   _Bootstrap_ (CSS only - no unsafe DOM manipulation)
+-   _jQuery_ (CSS Animations only - no unsafe DOM manipulation)
+-   _React CSS Transition Group_ (CSS Animations)
+-   _React Router_ (Routing)
+-   _ESLint_ (Linting)
+-   _Babel & Webpack_ (Compiling & Hot-Reloading)
+-   _Enzyme_ (React Component Testing)
+-   _Jest_ (Unit Testing)
 
 Running using Node.js
 
 ### Manual
 
-#### Enable console debug 
+#### Enable console debug
 
 To enable the debug in your browser's console, in `meta.js` :
 
-* Set `debug: true` 
+-   Set `debug: true`
 
-#### Disable console debug 
+#### Disable console debug
 
 To disable the debug in your browser's console, in `meta.js` :
 
-* Set `debug: false` 
-
+-   Set `debug: false`
 
 ### iTunes API
 

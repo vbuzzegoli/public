@@ -1,9 +1,9 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import albumsReducer from './albums';
-import searchReducer from './search';
+import albumsReducer from "./albums";
+import searchReducer from "./search";
 
 export default combineReducers({
-  searchResults: albumsReducer,
-  searchInfo: searchReducer
-})
+	searchResults: albumsReducer,
+	searchInfo: searchReducer
+});

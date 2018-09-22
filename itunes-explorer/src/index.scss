@@ -1,15 +1,15 @@
-@import './sass-global/variables';
-@import './sass-global/mixins';
+@import "./sass-global/variables";
+@import "./sass-global/mixins";
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: $clSecondaryBackground;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: $clSecondaryBackground;
 }
 
 .row {
 	margin: 0;
 	padding: 0;
 	border-width: 0;
-} 
+}

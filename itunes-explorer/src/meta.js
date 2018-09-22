@@ -1,3 +1,3 @@
 export const meta = {
-	debug: false //set to true to enable console outputs
-}
+	debug: false // set to true to enable console outputs
+};

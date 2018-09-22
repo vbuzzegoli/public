@@ -1,0 +1,22 @@
+@import "../../sass-global/variables";
+@import "../../sass-global/mixins";
+
+#not-found-wrapper {
+	text-align: center;
+	padding-top: 40px;
+
+	#not-found-code {
+		@include fsPrimary;
+		color: $clPrimaryText;
+		font-size: 30px;
+	}
+
+	#not-found-info {
+		@include fsSecondary;
+		color: $clTertiaryText;
+	}
+	#home {
+		@include fsSecondary;
+		padding-top: 20px;
+	}
+}
