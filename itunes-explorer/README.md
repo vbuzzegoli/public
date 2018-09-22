@@ -56,7 +56,7 @@ API URL: https://itunes.apple.com/search?term=${ARTIST_NAME}
 
 Languages :
 
--   _Javascript (ES6, JSX)_
+-   _Javascript (ES6+, JSX)_
 -   _CSS 3_
 -   _HTML 5_
 
@@ -101,7 +101,7 @@ Victor Buzzegoli
 
 ### Version
 
-1.1.0
+1.1.1
 
 ### License
 
