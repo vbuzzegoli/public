@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FETCH_ALBUMS, CLEAR_ALBUMS } from "./constants";
+import * as actions from "../constants/action-types";
 
 const api = "https://itunes.apple.com/";
 const search = "search?";
@@ -12,9 +12,9 @@ export const fetchAlbums = artist => dispatch => {
 	return axios
 		.get(query)
 		.then(promise =>
-			dispatch({ type: FETCH_ALBUMS, payload: promise.data })
+			dispatch({ type: actions.FETCH_ALBUMS, payload: promise.data })
 		);
 };
 
 export const clearAlbums = () => dispatch =>
-	dispatch({ type: CLEAR_ALBUMS, payload: [] });
+	dispatch({ type: actions.CLEAR_ALBUMS, payload: [] });

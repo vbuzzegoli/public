@@ -1,9 +1,9 @@
-import { EDIT_LAST_SEARCH } from "../actions/constants";
+import * as actions from "../constants/action-types";
 import { defaultState } from "./defaultState";
 
 const searchReducer = (state = defaultState, { type, payload }) => {
 	switch (type) {
-		case EDIT_LAST_SEARCH:
+		case actions.EDIT_LAST_SEARCH:
 			return {
 				...state,
 				lastSearch: payload

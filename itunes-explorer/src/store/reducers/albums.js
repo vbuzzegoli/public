@@ -1,10 +1,10 @@
-import { FETCH_ALBUMS, CLEAR_ALBUMS } from "../actions/constants";
+import * as actions from "../constants/action-types";
 import { defaultState } from "./defaultState";
 import { meta } from "../../meta";
 
 const albumsReducer = (state = defaultState, { type, payload }) => {
 	switch (type) {
-		case FETCH_ALBUMS:
+		case actions.FETCH_ALBUMS:
 			if (payload.resultCount !== 0) {
 				if (meta.debug) console.log("Results found..");
 				return {
@@ -18,7 +18,7 @@ const albumsReducer = (state = defaultState, { type, payload }) => {
 				albums: []
 			};
 
-		case CLEAR_ALBUMS:
+		case actions.CLEAR_ALBUMS:
 			return {
 				...state,
 				albums: []
