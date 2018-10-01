@@ -1,27 +1,26 @@
 //Mixins
 
-@import 'variables';
+@import "variables";
 
 @mixin clearFix {
-	&:after{
+	&:after {
 		content: "";
-		display: block;;
+		display: block;
 		clear: both;
 	}
 }
 
-@mixin mQ($arg...){
+@mixin mQ($arg...) {
 	@if length($arg) == 1 {
 		@media screen and (max-width: nth($arg, 1)) {
 			@content;
 		}
-	} 
+	}
 	@if length($arg) == 2 {
 		@media screen and (min-width: nth($arg, 1)) and (max-width: nth($arg, 2)) {
 			@content;
 		}
 	}
-	
 }
 
 @mixin portrait {
@@ -36,13 +35,12 @@
 	}
 }
 
-
 @mixin fsRoboto {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 @mixin fsUbuntu {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: "Ubuntu", sans-serif;
 }
 
 @mixin fsPrimary {
@@ -52,4 +50,3 @@
 @mixin fsSecondary {
 	@include fsRoboto;
 }
-
